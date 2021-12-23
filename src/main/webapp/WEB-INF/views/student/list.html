@@ -32,7 +32,7 @@
         <td th:text="${s.getScore()}"></td>
         <td th:text="${s.getAge()}"></td>
         <td th:text="${s.getClasss().getName()}"></td>
-        <td><a href=""></a></td>
+        <td><a th:href="@{/students/edit/__${student.getId()}__}">edit</a></td>
     </tr>
     </tbody>
 </table>

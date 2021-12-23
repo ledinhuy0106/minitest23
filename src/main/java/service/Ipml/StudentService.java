@@ -43,4 +43,9 @@ public class StudentService implements IStudentService {
     public Iterable<Student> findByName(String name) {
         return studentRepository.findByName(name);
     }
+
+    @Override
+    public Iterable<Student> findAllByScoreGreaterThan8() {
+        return studentRepository.findAllByScoreGreaterThan8();
+    }
 }

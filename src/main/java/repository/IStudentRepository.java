@@ -11,4 +11,6 @@ public interface IStudentRepository extends JpaRepository<Student, Long> {
     Iterable<Student> findAllByOrderByScoreAsc();
 
     Iterable<Student> findByName(String name);
+
+    Iterable<Student> findAllByScoreGreaterThan8();
 }
