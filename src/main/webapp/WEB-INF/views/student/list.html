@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    <button >Điểm>8</button>
+</form>
+<form action="">
+    <input type="text" placeholder="nhập tên" name="name">
+    <button >tìm</button>
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Age</th>
+        <th>Class</th>
+        <th>Edit</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="s : ${students}" >
+        <td th:text="${s.getId()}"></td>
+        <td th:text="${s.getName()}"></td>
+        <td th:text="${s.getScore()}"></td>
+        <td th:text="${s.getAge()}"></td>
+        <td th:text="${s.getClasss().getName()}"></td>
+        <td><a href=""></a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
